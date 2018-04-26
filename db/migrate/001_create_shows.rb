@@ -6,4 +6,5 @@ def change
         t.string :network
         t.integer :rating
     end
+    end
 end
