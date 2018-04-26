@@ -21,4 +21,7 @@ namespace :db do
 end
 
 
-decs 
+desc "run pry"
+task :console do
+    Pry.start
+end
