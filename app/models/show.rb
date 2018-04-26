@@ -1,5 +1,5 @@
 class Show < ActiveRecord::Base
     def self.highest_rating
-        Show.where(maximum('rating')).first
+        Show.maximum('rating')
     end
 end
