@@ -13,6 +13,6 @@ class Show < ActiveRecord::Base
 
     def self.least_popular_show
         binding.pry
-        Show.where(minimum('rating')).first
+        Show.where(minimum('rating')).last
     end
 end
